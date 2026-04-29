@@ -70,7 +70,7 @@ export default function Home() {
         <span className='badge'>Smart Academic Forecast</span>
         <h1>GWA Predictor</h1>
         <p className='subtitle'>
-          Enter your current GWA to predict your next academic year GWA.
+          Please enter your current Grade Weight Average to predict next academic year GWA.
           <br /> Developer: Al James Lopez 
           <br /> © 2026
         </p>
@@ -88,7 +88,7 @@ export default function Home() {
 
         <div className='singleFieldWrap'>
           <label className='field'>
-            <span>Overall GWA (1.00 - 5.00)</span>
+            <span>Overall GWA (1.00 - 3.00)</span>
             <input
               type='number'
               step='0.01'
@@ -121,7 +121,7 @@ export default function Home() {
         {resultGwa !== null && (
           <div className='result'>
             <div className='resultRow'>
-              <span>Predicted next-year GWA</span>
+              <span>Predicted next academic year GWA</span>
               <strong>{resultGwa.toFixed(2)}</strong>
             </div>
             {resultInterval && <div className='resultMeta'>Likely range (80%): {resultInterval.lower.toFixed(2)} - {resultInterval.upper.toFixed(2)}</div>}
