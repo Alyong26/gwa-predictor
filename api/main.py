@@ -62,7 +62,7 @@ def home():
 
 @app.post('/predict')
 def predict(data: PredictionInput):
-    if data.overall_gwa < 1.0 or data.overall_gwa > 5.0:
+    if data.overall_gwa < 1.0 or data.overall_gwa > 3.0:
         raise HTTPException(
             status_code=400,
             detail='Please provide a GWA between 1.00 and 3.00.',
