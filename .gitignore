@@ -1,0 +1,7 @@
+.vercel
+node_modules
+.next
+terminals
+agent-transcripts
+assets
+*.log
