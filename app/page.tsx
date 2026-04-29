@@ -70,7 +70,7 @@ export default function Home() {
         <span className='badge'>Smart Academic Forecast</span>
         <h1>GWA Predictor</h1>
         <p className='subtitle'>
-          Please enter your current Grade Weight Average to predict next academic year GWA.
+          Please enter your current Grade Weight Average to predict your next academic year GWA.
           <br /> Developer: Al James Lopez 
           <br /> © 2026
         </p>
