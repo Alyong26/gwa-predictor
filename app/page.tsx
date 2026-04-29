@@ -71,8 +71,8 @@ export default function Home() {
         <h1>GWA Predictor</h1>
         <p className='subtitle'>
           Please enter your current Grade Weight Average to predict your next academic year GWA.
-          <br /> Developer: Al James Lopez 
-          <br /> © 2026
+          <br /> Full-stack Developer: Al James Lopez 
+          <br /> © 2026 General Weighted Average Predictor System. All rights reserved.
         </p>
 
         <div className='heroStats'>
