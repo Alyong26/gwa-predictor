@@ -65,7 +65,7 @@ def predict(data: PredictionInput):
     if data.overall_gwa < 1.0 or data.overall_gwa > 5.0:
         raise HTTPException(
             status_code=400,
-            detail='Please provide a GWA between 1.00 and 5.00.',
+            detail='Please provide a GWA between 1.00 and 3.00.',
         )
 
     row = pd.DataFrame([{"current_gwa": float(data.overall_gwa)}])
