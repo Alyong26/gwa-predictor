@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import PwaRegister from './pwa-register'
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body style={{margin:0,fontFamily:'Arial, sans-serif'}}>
         <PwaRegister />
         {children}
+        <Analytics />
       </body>
     </html>
   )
